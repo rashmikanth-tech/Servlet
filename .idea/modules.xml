@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FormServlet/FormServlet.iml" filepath="$PROJECT_DIR$/FormServlet/FormServlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JSP Project/JSP Project.iml" filepath="$PROJECT_DIR$/JSP Project/JSP Project.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Servlet.iml" filepath="$PROJECT_DIR$/.idea/Servlet.iml" />
     </modules>
   </component>
