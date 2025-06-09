@@ -30,8 +30,16 @@ public class weatheServlet extends GenericServlet {
         servletRequest.setAttribute("datename",Record_Date);
 
 
-        double temp = Double.parseDouble(Temp);
         LocalDate date =LocalDate.parse(Record_Date);
+
+
+        WeatherDTO weatherDTO = new WeatherDTO();
+        weatherDTO.setLocationname(name);
+        weatherDTO.setCapturedname(CapturedBy);
+        weatherDTO.setTempname(Temp);
+        weatherDTO.setDatename(date);
+
+        servletRequest.setAttribute("weather",weatherDTO);
 
 
         RequestDispatcher requestDispatcher= servletRequest.getRequestDispatcher("weatherResult.jsp");
