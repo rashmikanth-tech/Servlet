@@ -7,3 +7,8 @@
 0:0:0:0:0:0:0:1 - - [02/Jun/2025:10:59:32 +0530] "GET /JSP%20Project/ HTTP/1.1" 200 230
 0:0:0:0:0:0:0:1 - - [02/Jun/2025:10:59:35 +0530] "GET /JSP%20Project/contact.jsp HTTP/1.1" 200 555
 0:0:0:0:0:0:0:1 - - [02/Jun/2025:10:59:43 +0530] "GET /JSP%20Project/contact?nameName=Rash&ageAge=20&emailEmail=rashmikanthgr.xworkz%40outlook.com HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [02/Jun/2025:21:05:08 +0530] "GET /JSP%20Project HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [02/Jun/2025:21:05:09 +0530] "GET /JSP%20Project/ HTTP/1.1" 200 230
+0:0:0:0:0:0:0:1 - - [02/Jun/2025:21:05:09 +0530] "GET /favicon.ico HTTP/1.1" 404 683
+0:0:0:0:0:0:0:1 - - [02/Jun/2025:21:05:11 +0530] "GET /JSP%20Project/contact.jsp HTTP/1.1" 200 555
+0:0:0:0:0:0:0:1 - - [02/Jun/2025:21:05:16 +0530] "GET /JSP%20Project/contact?nameName=Rash&ageAge=20&emailEmail=rashmikanthgr.xworkz%40outlook.com HTTP/1.1" 200 213
