@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "/JobApplicationServlet",loadOnStartup = 5)
+@WebServlet(urlPatterns = "/JobApplicationServlet",loadOnStartup = 1)
 
 public class JobServlet extends HttpServlet {
 
