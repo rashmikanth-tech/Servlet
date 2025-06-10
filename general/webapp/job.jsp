@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,7 +39,7 @@
         nav.navClass {
             display: flex;
             justify-content: space-between;
-            background-color: #343a40;
+            background-color: #343a40;2
             padding: 10px 20px;
         }
         nav.navClass ul {

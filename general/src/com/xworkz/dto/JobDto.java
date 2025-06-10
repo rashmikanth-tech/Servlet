@@ -1,4 +1,4 @@
-package com.xworkz.servlet;
+package com.xworkz.dto;
 
 import java.io.Serializable;
 

@@ -1,7 +1,7 @@
 .navClass {
     background-color: rgb(87, 223, 91);
     border-radius: 2vh;
-    padding: 20px;
+    padding: 7px 20px;
     display :flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +16,7 @@ li {
 .navClass ul li a {
     text-decoration: none;
     color: black;
-    padding: 8px 12px;
+    padding: 6px 12px;
 }
 
 .navClass ul li:hover {

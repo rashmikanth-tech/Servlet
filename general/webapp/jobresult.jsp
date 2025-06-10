@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="navbar.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -22,7 +38,8 @@
         </div>
     </nav>
 </header>
-
+<div class="form-container">
+    <h2>Your Response</h2>
 Name: ${getjob.nameName}<br>
 Email: ${getjob.emailEmail}<br>
 Education: ${getjob.eduEducation}<br>
