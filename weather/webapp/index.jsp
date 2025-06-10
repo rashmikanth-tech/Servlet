@@ -12,5 +12,7 @@
 </head>
 <body>
 <a href="weather.jsp">Weather Details</a>
+<br>
+<a href="Rain.jsp">Rain Details</a>
 </body>
 </html>

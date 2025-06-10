@@ -6,40 +6,41 @@ import java.time.LocalDate;
 
 public class WeatherDTO implements Serializable {
 
-    private String locationname;
-    private String capturedname;
-    private String tempname;
-    private LocalDate datename;
+    private String locationName;
+    private String capturedName;
+    private String tempName;
+    private LocalDate dateName;
 
-    public String getLocationname() {
-        return locationname;
+
+    public String getLocationName() {
+        return locationName;
     }
 
-    public void setLocationname(String locationname) {
-        this.locationname = locationname;
+    public void setLocationName(String locationName) {
+        this.locationName = locationName;
     }
 
-    public String getCapturedname() {
-        return capturedname;
+    public String getCapturedName() {
+        return capturedName;
     }
 
-    public void setCapturedname(String capturedname) {
-        this.capturedname = capturedname;
+    public void setCapturedName(String capturedName) {
+        this.capturedName = capturedName;
     }
 
-    public String getTempname() {
-        return tempname;
+    public String getTempName() {
+        return tempName;
     }
 
-    public void setTempname(String tempname) {
-        this.tempname = tempname;
+    public void setTempName(String tempName) {
+        this.tempName = tempName;
     }
 
-    public LocalDate getDatename() {
-        return datename;
+    public LocalDate getDateName() {
+        return dateName;
     }
 
-    public void setDatename(LocalDate datename) {
-        this.datename = datename;
+    public void setDateName(LocalDate dateName) {
+        this.dateName = dateName;
     }
 }

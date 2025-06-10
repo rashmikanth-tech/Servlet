@@ -19,25 +19,21 @@ public class weatheServlet extends GenericServlet {
 
 
         String name = servletRequest.getParameter("locationname");
-        String CapturedBy = servletRequest.getParameter("capturedname");
-        String Temp = servletRequest.getParameter("tempname");
-        String Record_Date = servletRequest.getParameter("datename");
+        String capturedBy = servletRequest.getParameter("capturedname");
+        String temp = servletRequest.getParameter("tempname");
+        String recordDate = servletRequest.getParameter("datename");
 
 
-        servletRequest.setAttribute("locationname",name);
-        servletRequest.setAttribute("capturedname",CapturedBy);
-        servletRequest.setAttribute("tempname",Temp);
-        servletRequest.setAttribute("datename",Record_Date);
 
 
-        LocalDate date =LocalDate.parse(Record_Date);
+        LocalDate date =LocalDate.parse(recordDate);
 
 
         WeatherDTO weatherDTO = new WeatherDTO();
-        weatherDTO.setLocationname(name);
-        weatherDTO.setCapturedname(CapturedBy);
-        weatherDTO.setTempname(Temp);
-        weatherDTO.setDatename(date);
+       weatherDTO.setLocationName(name);
+       weatherDTO.setCapturedName(capturedBy);
+       weatherDTO.setTempName(temp);
+       weatherDTO.setDateName(date);
 
         servletRequest.setAttribute("weather",weatherDTO);
 

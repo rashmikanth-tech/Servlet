@@ -17,13 +17,13 @@
 </head>
 <body>
 
-<p>Location : ${locationname}</p>
+<p>Location : ${weather.locationName}</p>
 <br>
-<p>Captured By : ${capturedname}</p>
+<p>Captured By : ${weather.capturedName}</p>
 <br>
-<p>Temp : ${tempname}</p>
+<p>Temp : ${weather.tempName}</p>
 <br>
-<p>Recorded Date : ${datename}</p>
+<p>Recorded Date : ${weather.dateName}</p>
 
 
 <a href="index.jsp">Home</a>

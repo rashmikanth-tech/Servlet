@@ -1,0 +1,50 @@
+.navClass {
+    background-color: rgb(87, 223, 91);
+    border-radius: 2vh;
+    padding: 20px;
+    display :flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    padding: 20px;
+    display: inline-block;
+}
+
+.navClass ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+}
+
+.navClass ul li:hover {
+   color: rgb(228, 24, 24);
+    background-color: rgb(193, 194, 194);
+    border-radius: 5px;
+}
+
+#searchID {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#searchID input {
+    padding: 8px 12px 8px 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
