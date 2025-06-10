@@ -45,7 +45,7 @@ public class BirthCertificatServlet extends HttpServlet {
 
         req.setAttribute("birth",birthCertificatDto);
 
-        RequestDispatcher requestDispatcher= req.getRequestDispatcher("BirthCertificatResult.jsp");
+        RequestDispatcher requestDispatcher= req.getRequestDispatcher("BirthCertificat.jsp");
         requestDispatcher.forward(req,resp);
     }
 }
