@@ -13,6 +13,8 @@
             <li><a href="index.jsp" target="_blank">Home</a></li>
             <li> <a href="job.jsp">Job Application</a> </li>
             <li> <a href="%20BirthCertificat.jsp">Birth Certificate</a> </li>
+            <li> <a href="Passport.jsp">Passport Application</a> </li>
+            <li> <a href="DeathCertificate.jsp">Death Certificate</a> </li>
             <li> <a href    ="">Review</a> </li>
         </ul>
         <div id="searchID">

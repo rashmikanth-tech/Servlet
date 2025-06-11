@@ -21,7 +21,7 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        input[type="text"], input[type="email"], input[type="number"] {
+        input[type="text"], input[type="email"], input[type="number"],select[name="passPassport"] {
             width: 100%;
             padding: 10px;
             margin: 10px 0 20px 0;
@@ -73,7 +73,6 @@
             <li><a href="index.jsp" target="_blank">Home</a></li>
             <li><a href="job.jsp">Job Application</a></li>
             <li> <a href="%20BirthCertificat.jsp">Birth Certificate</a> </li>
-            <li> <a href="Passport.jsp"> Passport Application</a> </li>
             <li><a href="#">Review</a></li>
         </ul>
         <div id="searchID">
@@ -84,15 +83,24 @@
 </header>
 
 <div class="form-container">
-    <h2>Job Application Form</h2>
-    <form action="JobApplicationServlet" method="post">
-        Name: <input type="text" name="nameName"><br>
-        Email: <input type="email" name="emailEmail"><br>
-        Education: <input type="text" name="eduEducation"><br>
-        Skills: <input type="text" name="skillSkill"><br>
-        Expected Salary: <input type="number" name="salarySalary"><br>
-        Experience: <input type="number" name="expExperiance"><br>
+    <h2>Passport Form Form</h2>
+    <form action="PassportApplicationServlet" method="post">
+        Applicant Name: <input type="text" name="nameName"><br>
+        Adhar No: <input type="number" name="adharAdhar"><br>
+        Address: <input type="text" name="addressAdress"><br>
+        PanNo: <input type="text" name="panPan"><br>
+        Country : <input type="text" name="countryCountry"><br>
+        State: <input type="text" name="stateState"><br>
+        City: <input type="text" name="cityCity"><br>
+        PinCode: <input type="number" name="pinPin"><br>
+        PassportType:
+        <select name="passPassport">
+            <option value="Domanstic">Domostic</option>
+            <option value="International">International</option>
+        </select><br>
+        Payment Reference No: <input type="number" name="payRefrence"><br>
         <input type="submit" value="Submit">
+
     </form>
 </div>
 

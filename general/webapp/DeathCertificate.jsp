@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Application</title>
+    <title>Birth Certificate</title>
     <link rel="stylesheet" href="navbar.css">
     <style>
         body {
@@ -21,7 +21,7 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        input[type="text"], input[type="email"], input[type="number"] {
+        input[type="text"], input[type="email"], input[type="number"],input[type="datetime-local"],select[name="hospitalName"],select[name="hospitalType"] {
             width: 100%;
             padding: 10px;
             margin: 10px 0 20px 0;
@@ -72,8 +72,7 @@
         <ul>
             <li><a href="index.jsp" target="_blank">Home</a></li>
             <li><a href="job.jsp">Job Application</a></li>
-            <li> <a href="%20BirthCertificat.jsp">Birth Certificate</a> </li>
-            <li> <a href="Passport.jsp"> Passport Application</a> </li>
+            <li><a href="Passport.jsp">Passport Form</a></li>
             <li><a href="#">Review</a></li>
         </ul>
         <div id="searchID">
@@ -83,26 +82,55 @@
     </nav>
 </header>
 
+
 <div class="form-container">
-    <h2>Job Application Form</h2>
-    <form action="JobApplicationServlet" method="post">
-        Name: <input type="text" name="nameName"><br>
-        Email: <input type="email" name="emailEmail"><br>
-        Education: <input type="text" name="eduEducation"><br>
-        Skills: <input type="text" name="skillSkill"><br>
-        Expected Salary: <input type="number" name="salarySalary"><br>
-        Experience: <input type="number" name="expExperiance"><br>
+    <h2>Death Certificate Application</h2>
+    <form action="DeathCertificateServlet" method="post">
+        <label>Full Name of Deceased:</label>
+        <input type="text" name="deceasedName" required><br>
+
+        <label>Cause of Death:</label>
+        <input type="text" name="causeOfDeath" required><br>
+
+        <label>Date of Death:</label>
+        <input type="date" name="dateOfDeath" required><br>
+
+        <label>Time of Death:</label>
+        <input type="time" name="timeOfDeath" required><br>
+
+        <label>Age at Death:</label>
+        <input type="number" name="ageAtDeath" required><br>
+
+        <label>Certified By:</label>
+        <input type="text" name="certifiedBy" required><br>
+
+        <label>Hospital Name:</label>
+        <input type="text" name="hospitalName" required><br>
+
+        <label>Manner of Death:</label>
+        <select name="mannerOfDeath" required>
+            <option value="">Select</option>
+            <option value="Natural">Natural</option>
+            <option value="Accident">Accident</option>
+            <option value="Suicide">Suicide</option>
+            <option value="Homicide">Homicide</option>
+            <option value="Undetermined">Undetermined</option>
+        </select><br>
+
+        <label>Gender:</label>
+        <select name="gender" required>
+            <option value="">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br>
+
+        <label>Identifiable Marks (if any):</label>
+        <input type="text" name="marks"><br>
+
         <input type="submit" value="Submit">
     </form>
 </div>
-
-<script>
-    function performSearch() {
-        const query = document.querySelector('#searchID input').value;
-        alert("Search triggered for: " + query);
-        // Add search functionality if needed
-    }
-</script>
 
 </body>
 </html>

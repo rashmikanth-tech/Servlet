@@ -29,18 +29,17 @@ public class JobServlet extends HttpServlet {
         double found = Double.parseDouble(salarySalary);
         int exp = Integer.parseInt(expExperiance);
 
-        JobDto jobDto = new JobDto();
-        jobDto.setNameName(nameName);
-        jobDto.setEmailEmail(emailEmail);
-        jobDto.setEduEducation(eduEducation);
-        jobDto.setSkillSkill(skillSkill);
-        jobDto.setSalarySalary(found);
-        jobDto.setExpExperiance(exp);
+//        JobDto jobDto = new JobDto();
+//        jobDto.setNameName(nameName);
+//        jobDto.setEmailEmail(emailEmail);
+//        jobDto.setEduEducation(eduEducation);
+//        jobDto.setSkillSkill(skillSkill);
+//        jobDto.setSalarySalary(found);
+//        jobDto.setExpExperiance(exp);
 
-        req.setAttribute("getjob",jobDto);
+        JobDto jobDto =new JobDto(nameName,emailEmail,eduEducation,skillSkill,found,exp);
 
-        RequestDispatcher requestDispatcher= req.getRequestDispatcher("jobresult.jsp");
-        requestDispatcher.forward(req,resp);
+        System.out.println(jobDto);
 
     }
 

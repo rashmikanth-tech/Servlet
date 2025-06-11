@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
-@WebServlet(urlPatterns ="/BirthApplicationServlet" ,loadOnStartup = 2)
+@WebServlet(urlPatterns ="/BirthApplicationServlet" ,loadOnStartup =2)
 
 public class BirthCertificatServlet extends HttpServlet {
 
@@ -45,7 +45,7 @@ public class BirthCertificatServlet extends HttpServlet {
 
         req.setAttribute("birth",birthCertificatDto);
 
-        RequestDispatcher requestDispatcher= req.getRequestDispatcher("BirthCertificat.jsp");
+        RequestDispatcher requestDispatcher= req.getRequestDispatcher("BirthResult.jsp");
         requestDispatcher.forward(req,resp);
     }
 }
