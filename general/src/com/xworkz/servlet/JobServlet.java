@@ -1,8 +1,9 @@
 package com.xworkz.servlet;
 
 import com.xworkz.dto.JobDto;
+import com.xworkz.service.JobService;
+import com.xworkz.service.ServiceImplement;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,7 +17,6 @@ public class JobServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
 
 
         String nameName = req.getParameter("nameName");
@@ -40,6 +40,10 @@ public class JobServlet extends HttpServlet {
         JobDto jobDto =new JobDto(nameName,emailEmail,eduEducation,skillSkill,found,exp);
 
         System.out.println(jobDto);
+
+
+        JobService jobService = new ServiceImplement();
+        String result = jobService.jobValidate(jobDto);
 
     }
 
