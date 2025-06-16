@@ -4,5 +4,5 @@ import com.xworkz.dto.JobDto;
 
 public interface JobRepository {
 
-    void apply(JobDto jobDto);
+    void jobValidateAndSave(JobDto jobDto);
 }

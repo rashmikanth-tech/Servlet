@@ -1,6 +1,8 @@
 package com.xworkz.servlet;
 
 import com.xworkz.dto.DrivingLicenceDto;
+import com.xworkz.service.DrivingLicenceService;
+import com.xworkz.service.LicenceImplement;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.time.LocalDate;
 import java.util.Date;
 
@@ -17,7 +20,7 @@ public class DrivingServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String Name = req.getParameter("personName");
-        if (Name == null){
+        if (Name == null) {
             System.out.println("eneter name");
         }
         String adessAdress = req.getParameter("adessAdress");
@@ -29,15 +32,11 @@ public class DrivingServlet extends HttpServlet {
         long number = Long.parseLong(mobileNum);
         LocalDate date = LocalDate.parse(applayDate);
 
-        DrivingLicenceDto drivingLicenceDto = new DrivingLicenceDto(Name,adessAdress,number,date,vehicle);
-        if (Name == null){
-            System.out.println("eneter name");
-        }
-        else {
-        System.out.println(drivingLicenceDto);
-        }
+        DrivingLicenceDto drivingLicenceDto = new DrivingLicenceDto(Name, adessAdress, number, date, vehicle);
 //
 //        req.setAttribute("drive",drivingLicenceDto);
+        DrivingLicenceService drivingLicenceService = new LicenceImplement();
+        String check = drivingLicenceService.validate(drivingLicenceDto);
 
 
     }

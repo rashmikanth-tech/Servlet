@@ -1,6 +1,8 @@
 package com.xworkz.servlet;
 
 import com.xworkz.dto.BirthCertificatDto;
+import com.xworkz.service.BirthCertificateService;
+import com.xworkz.service.BirthImplement;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -33,6 +35,8 @@ public class BirthCertificatServlet extends HttpServlet {
 
         LocalDateTime date = LocalDateTime.parse(dateAndTime);
 
+
+
         BirthCertificatDto birthCertificatDto = new BirthCertificatDto();
         birthCertificatDto.setBirthBirthId(birthBirthId);
         birthCertificatDto.setHospitalName(hospitalName);
@@ -42,6 +46,11 @@ public class BirthCertificatServlet extends HttpServlet {
         birthCertificatDto.setDoctorName(doctorName);
         birthCertificatDto.setNurseName(nurseName);
         birthCertificatDto.setHospitalType(hospitalType);
+
+
+
+        BirthCertificateService birthCertificateService = new BirthImplement();
+        birthCertificateService.birthValidate(birthCertificatDto);
 
         req.setAttribute("birth",birthCertificatDto);
 

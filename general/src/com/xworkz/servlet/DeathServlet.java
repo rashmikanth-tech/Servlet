@@ -1,7 +1,10 @@
 package com.xworkz.servlet;
 
 import com.xworkz.dto.DeathDto;
+import com.xworkz.service.DeathImplement;
+import com.xworkz.service.DeathService;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -40,6 +43,13 @@ public class DeathServlet extends HttpServlet {
                 ageAtDeath, certifiedBy, hospitalName, mannerOfDeath, gender, marks
         );
 
+        DeathService deathService = new DeathImplement();
+        deathService.validate(deathDto);
+
         System.out.println(deathDto);
+
+        req.setAttribute("deathReason",deathDto);
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("DeathResult.jsp");
+        requestDispatcher.forward(req,resp);
     }
 }
