@@ -34,9 +34,9 @@ public class DeathRepositoryImple implements  DeathRepository{
 
        int roeEffected = preparedStatement.executeUpdate();
        if (roeEffected > 0) {
-           System.out.println("✅ Data inserted successfully!");
+           System.out.println("Data inserted successfully");
        } else {
-           System.out.println("❌ Failed to insert data.");
+           System.out.println(" Failed to insert data");
        }
 
        preparedStatement.close();
